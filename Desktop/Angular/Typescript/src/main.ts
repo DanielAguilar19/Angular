@@ -3,7 +3,8 @@ import './style.css'
 //import './topics/02-Object-interface';
 //import './topics/03-function';
 //import './topics/04-homework-types';
-import './topics/05-basic-destructuratio';
+//import './topics/05-basic-destructuratio';
+import './topics/06-function-destructuring';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   Hola Mundo

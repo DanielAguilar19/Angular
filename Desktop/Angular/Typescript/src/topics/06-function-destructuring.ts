@@ -1,5 +1,5 @@
 //Interfaz que define los productos en venta
-interface product{
+export interface product{
     description:string;
     price:number;
 }
@@ -14,15 +14,15 @@ const tablet:product={
     price: 600.0
 }
 //destrcturacion para interface product
-const {description:descripcionCelular,price:precioCelular}=phone;
-const {description:descripcionTabblet,price:precioTablet}=tablet;
+//const {description:descripcionCelular,price:precioCelular}=phone;
+//const {description:descripcionTabblet,price:precioTablet}=tablet;
 
-interface taxCalculationOptions{
+export interface taxCalculationOptions{
     tax:number;
     products: product[];
 }
 
-function taxCalculation(options:taxCalculationOptions):[number,number]{
+export function taxCalculation(options:taxCalculationOptions):[number,number]{
     const {products,tax}=options;//Desestructuracion de options
     let total=0;
 //se hace suma de todos los precios de los productos en la variable total
@@ -44,5 +44,5 @@ const [total, taxResult] = taxCalculation({
     tax:tax
 })
 
-console.log("Total ",total);
-console.log("Tax ",taxResult);
+//console.log("Total ",total);
+//console.log("Tax ",taxResult);
